@@ -186,7 +186,7 @@ if (enableShortcutKey.value) {
           </div>
         </div>
       </DropdownMenuLabel>
-      <DropdownMenuSeparator />
+      <DropdownMenuSeparator v-if="menus && menus.length > 0" />
       <DropdownMenuItem
         v-for="menu in menus"
         :key="menu.text"
